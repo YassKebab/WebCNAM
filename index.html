@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Page</title>
+</head>
+<body>
+    <h1>Salut ! Petit formulaire mec :</h1>
+    <form name="myForm" method="POST" action="myPhpPage.php">
+        <label>
+            Votre prénom ?
+            <input name="firstname" type="text">
+        </label><br>
+        Le S dans GAFAS correspond à quoi ?
+        <label>
+            <input name="answer" type="radio" value="1"/>
+            Siemens
+        </label>
+        <label>
+            <input name="answer" type="radio" value="2"/>
+            SpaceFoot
+        </label>
+        <label>
+            <input name="answer" type="radio" value="3"/>
+            Skoda
+        </label><br>
+        <label>
+            De 0 à 10 à quel point je suis nul en web ?
+            <input name="level" type="number" min="0" max="10" step="1" value="10"/>
+        </label><br>
+        <label>
+            Pourquoi je suis si nul ou bon ?(50 caractères max)
+            <textarea name="comment" maxlength="50"></textarea>
+        </label><br>
+        <p>Langages de programmation connus</p>
+
+        <label>
+            <input name="html" type="checkbox" value="html" >
+            HTML
+        </label>
+        <label>
+            <input name="c" type="checkbox" value="c">
+            C
+        </label>
+        <label>
+            <input name="java" type="checkbox" value="java">
+            java
+        </label><br>
+        <label>
+            Langage de programmation préféré
+            <select name="preflang">
+                <option value="html">HTML</option>
+                <option value="c">C</option>
+                <option value="js">JavaScript</option>
+                <option value="c++">C++</option>
+                <option value="php">php</option>
+            </select>
+        </label>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
